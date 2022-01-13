@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const Discord = require('discord.js')
-const client = new Discord.Client()
+const client = new Discord.Client(OTMxMjA3Nzk3OTA1OTc3Mzg1.YeBE2A.kF5yvILEjqlvrExa0GADA2c1XC0)
 const db = require('quick.db')
 
 const prefix = "+"

@@ -1,7 +1,7 @@
 const express = require('express')
-const app = express()
+const app = express(OTMxMjE3MjQ2NjcwNDQ2NjIz.YeBNpA.vFsQnS4sufE4sDBIxHYhsLq112w)
 const Discord = require('discord.js')
-const client = new Discord.Client()
+const client = new Discord.Client(OTMxMjE3MjQ2NjcwNDQ2NjIz.YeBNpA.vFsQnS4sufE4sDBIxHYhsLq112w)
 const db = require('quick.db')
 
 const prefix = "+"
@@ -19,7 +19,7 @@ client.on('message', async message => {
 
     let ch = message.mentions.channels.first() || client.channels.cache.get(args[1])
     if(!ch) return message.channel.send(`**Usage:**
-${prefix}set-welcome [ Channel ]`)
+${prefix}set-welcome [ wnilz ]`)
 
 db.set(`wlc_${message.guild.id}`, ch)
 message.channel.send(`تم تغير غرفة الترحيب الى \`${ch.name}\` `)
@@ -46,7 +46,8 @@ message.channel.send(`تم تغير غرفة الترحيب الى \`${ch.name}\
 
     let args = message.content.split(' ').slice(1).join(' ')
     if(!args) return message.channel.send(`**Usage:**
-${prefix}setMessage [ Message ]`)
+${prefix}setMessage [ Welcome To Nizi Avt 
+[user] ]`)
 
 db.set(`msg_${message.guild.id}`, args)
 message.channel.send(`تم وضع رسالة ترحيب جديدة `)
